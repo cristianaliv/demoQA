@@ -43,6 +43,7 @@ public class SeleniumActions {
         return browserManager.getDriver().findElements(locator);
     }
 
+
     public boolean isElementDisplayed(By locator) {
         return browserManager.getDriver().findElement(locator).isDisplayed();
     }

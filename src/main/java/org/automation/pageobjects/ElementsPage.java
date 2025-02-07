@@ -47,6 +47,7 @@ public class ElementsPage {
     }
 
 
+
     public String getTextBoxMessage() {
 
         log.info("Verify if the 'Text Box' is selected'");
