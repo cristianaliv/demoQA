@@ -55,3 +55,4 @@ public class ElementsPage {
         return actions.getElementText(TEXT_BOX_BANNER);
     }
 }
+
