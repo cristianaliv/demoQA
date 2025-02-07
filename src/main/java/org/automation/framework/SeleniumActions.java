@@ -2,11 +2,13 @@ package org.automation.framework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class SeleniumActions {
 
@@ -37,5 +39,12 @@ public class SeleniumActions {
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
+    public List<WebElement> getElements(By locator) {
+        return browserManager.getDriver().findElements(locator);
+    }
+
+    public boolean isElementDisplayed(By locator) {
+        return browserManager.getDriver().findElement(locator).isDisplayed();
+    }
 
 }
